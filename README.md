@@ -11,21 +11,21 @@
 
 
     int main()
-  {
+  	{
 
 	welcome();
 	goodbye();
 
 
-}
+	}
 
-void welcome() {
+	void welcome() {
 	cout << "Welcome to my program" << endl;
 
-}
+	}
 
 
-void goodbye() {
+	void goodbye() {
 	cout << "End of the program. Goodbye! " << endl;
 
   }
