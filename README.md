@@ -123,4 +123,135 @@
 	return 0;
 
 	}
+	
+	
+##
+
+	#include <iostream>
+	using namespace std;
+
+	void myCalculation(int num) {
+    num *= 2;
+    num += 8;
+    cout << num << endl;
+
+	}
+
+	int main()
+	{
+    int userNum;
+    cout << "Enter a number : ";
+    cin >> userNum;
+    myCalculation(userNum);
+	}
+	
+	
+	
+##
+	
+	
+	#include <iostream>
+	using namespace std;
+	int myCalculation(int num) {
+    num *= 2;
+    num += 8;
+    return num;
+	}
+
+	int main()
+	{
+    int userNum;
+    cout << "Enter a number : ";
+    cin >> userNum;
+    userNum = myCalculation(userNum);
+    cout << userNum << endl;
+    return 0;
+	}
+	
+	
+##	
+	
+	
+	#include <iostream>
+	using namespace std;
+	double sumItems(double item1 ,double item2) {
+    double total = item1 + item2;
+    return total;
+	}
+
+	int main()
+	{
+    double myMoney = 40.00;
+    double shoes = 25.99;
+    double tshirt = 11.50;
+
+    if (sumItems(shoes, tshirt) <= myMoney) {
+        cout << "YOU CAN AFFORD THESE ITEMS YAY" << endl;
+
+    }
+    else {
+        cout << "Save up amigo" << endl;
+    }
+
+	}
+	
+	
+##
+	
+	#include <iostream>
+	using namespace std;
+	string greetings(int time) {
+	if (time < 12) {
+		return "Good Morning!";
+	}
+	else {
+		return "Good Afternoon";
+	}
+
+	}
+
+	int main() {
+	cout << "What time is it?" << endl;
+	int userInput;
+	cin >> userInput;
+
+	cout << greetings(userInput) << endl;
+	}
+	
+	
+	
+	
+	#include <iostream>
+	using namespace std;
+	double sumItems(double item1, double item2) {
+    double total = item1 + item2;
+    return total;
+	}
+
+	int main()
+	{
+    double myMoney;
+    double shoes;
+    double tshirt;
+
+    cout << "How much money do you have on your wallet right now?" << endl;
+    cin >> myMoney;
+
+    cout << "Okay, how much is the band shirt you always wanted?"<< endl;
+    cin >> tshirt;
+    cout << "Coolio, how are the shoes then?" << endl;
+    cin >> shoes;
+
+
+    if (sumItems(shoes, tshirt) <= myMoney) {
+        cout << "YOU CAN AFFORD THESE ITEMS YAY" << endl;
+
+    }
+    else {
+        cout << "Save up amigo" << endl;
+    }
+
+	}
+	
+	
 
